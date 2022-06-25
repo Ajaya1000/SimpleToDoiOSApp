@@ -43,11 +43,5 @@ class CheckBox: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-        self.button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
     }
-    
-    @objc private func buttonClicked(){
-        isChecked = !isChecked
-    }
-
 }

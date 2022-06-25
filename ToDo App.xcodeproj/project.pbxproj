@@ -15,7 +15,6 @@
 		A52BC14D2862DFE800B2C22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BC14B2862DFE800B2C22C /* LaunchScreen.storyboard */; };
 		A52BC1562862E6CE00B2C22C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1552862E6CE00B2C22C /* EntryViewController.swift */; };
 		A52BC1582862E6F600B2C22C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1572862E6F600B2C22C /* TaskViewController.swift */; };
-		A52BC15A28631AA600B2C22C /* somer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BC15928631AA600B2C22C /* somer.storyboard */; };
 		A52BC16E28642C0600B2C22C /* ToDoCompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC16C28642C0600B2C22C /* ToDoCompleteCell.swift */; };
 		A52BC16F28642C0600B2C22C /* ToDoCompleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52BC16D28642C0600B2C22C /* ToDoCompleteCell.xib */; };
 		A52BC17228642C2200B2C22C /* ToDoIncompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC17028642C2200B2C22C /* ToDoIncompleteCell.swift */; };
@@ -25,6 +24,8 @@
 		A52BC1AA2864D7D600B2C22C /* ToDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1A82864D7D600B2C22C /* ToDoModel.xcdatamodeld */; };
 		A52BC1AC286583AB00B2C22C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1AB286583AB00B2C22C /* Constants.swift */; };
 		A52BC1AF2865975300B2C22C /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1AE2865975300B2C22C /* ToDoModel.swift */; };
+		A52BC1B22865B31100B2C22C /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1B12865B31100B2C22C /* TableHeaderView.swift */; };
+		A52BC1B42865B33D00B2C22C /* TableHeaderVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,6 @@
 		A52BC14E2862DFE800B2C22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A52BC1552862E6CE00B2C22C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		A52BC1572862E6F600B2C22C /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		A52BC15928631AA600B2C22C /* somer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = somer.storyboard; sourceTree = "<group>"; };
 		A52BC16C28642C0600B2C22C /* ToDoCompleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCompleteCell.swift; sourceTree = "<group>"; };
 		A52BC16D28642C0600B2C22C /* ToDoCompleteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCompleteCell.xib; sourceTree = "<group>"; };
 		A52BC17028642C2200B2C22C /* ToDoIncompleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoIncompleteCell.swift; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		A52BC1A92864D7D600B2C22C /* ToDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoModel.xcdatamodel; sourceTree = "<group>"; };
 		A52BC1AB286583AB00B2C22C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A52BC1AE2865975300B2C22C /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		A52BC1B12865B31100B2C22C /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderVIew.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,6 @@
 				A52BC1492862DFE800B2C22C /* Assets.xcassets */,
 				A52BC14B2862DFE800B2C22C /* LaunchScreen.storyboard */,
 				A52BC14E2862DFE800B2C22C /* Info.plist */,
-				A52BC15928631AA600B2C22C /* somer.storyboard */,
 				A52BC1A82864D7D600B2C22C /* ToDoModel.xcdatamodeld */,
 			);
 			path = "ToDo App";
@@ -136,6 +137,7 @@
 		A52BC1742864333B00B2C22C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A52BC1B02865B2F500B2C22C /* TableHeader */,
 				A52BC1A72864D3FB00B2C22C /* CheckBox */,
 			);
 			path = Components;
@@ -157,6 +159,15 @@
 				A52BC1AE2865975300B2C22C /* ToDoModel.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A52BC1B02865B2F500B2C22C /* TableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A52BC1B12865B31100B2C22C /* TableHeaderView.swift */,
+				A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */,
+			);
+			path = TableHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52BC1B42865B33D00B2C22C /* TableHeaderVIew.xib in Resources */,
 				A52BC14D2862DFE800B2C22C /* LaunchScreen.storyboard in Resources */,
 				A52BC17328642C2200B2C22C /* ToDoIncompleteCell.xib in Resources */,
-				A52BC15A28631AA600B2C22C /* somer.storyboard in Resources */,
 				A52BC14A2862DFE800B2C22C /* Assets.xcassets in Resources */,
 				A52BC16F28642C0600B2C22C /* ToDoCompleteCell.xib in Resources */,
 				A52BC17A28645A4F00B2C22C /* CheckBox.xib in Resources */,
@@ -234,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52BC1B22865B31100B2C22C /* TableHeaderView.swift in Sources */,
 				A52BC176286433C100B2C22C /* CheckBox.swift in Sources */,
 				A52BC17228642C2200B2C22C /* ToDoIncompleteCell.swift in Sources */,
 				A52BC1452862DFE700B2C22C /* ViewController.swift in Sources */,

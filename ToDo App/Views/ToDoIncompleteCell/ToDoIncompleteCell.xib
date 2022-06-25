@@ -17,27 +17,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-52-gIr">
-                        <rect key="frame" x="70" y="0.0" width="250" height="44"/>
+                        <rect key="frame" x="50" y="0.0" width="270" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1K-e2-Gye" customClass="CheckBox" customModule="ToDo_App" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                        <rect key="frame" x="0.0" y="2" width="40" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="P8w-95-Ufo"/>
+                            <constraint firstAttribute="height" constant="40" id="6fN-Qt-3h7"/>
+                            <constraint firstAttribute="width" constant="40" id="jgm-Ko-M8N"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="cg1-52-gIr" firstAttribute="leading" secondItem="p1K-e2-Gye" secondAttribute="trailing" constant="10" id="9Tz-Al-7fb"/>
-                    <constraint firstAttribute="bottom" secondItem="cg1-52-gIr" secondAttribute="bottom" id="G9L-SS-7rC"/>
-                    <constraint firstItem="p1K-e2-Gye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rhw-tw-x0W"/>
-                    <constraint firstAttribute="bottom" secondItem="p1K-e2-Gye" secondAttribute="bottom" id="U56-PJ-UYb"/>
-                    <constraint firstItem="p1K-e2-Gye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xfb-gT-Bq2"/>
-                    <constraint firstAttribute="trailing" secondItem="cg1-52-gIr" secondAttribute="trailing" id="jVg-AT-S6N"/>
-                    <constraint firstItem="cg1-52-gIr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pz5-Zy-qdr"/>
+                    <constraint firstItem="p1K-e2-Gye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2tq-1f-CQU"/>
+                    <constraint firstItem="cg1-52-gIr" firstAttribute="leading" secondItem="p1K-e2-Gye" secondAttribute="trailing" constant="10" id="L1Y-CN-fHC"/>
+                    <constraint firstItem="cg1-52-gIr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q7k-Gr-g8G"/>
+                    <constraint firstItem="p1K-e2-Gye" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g0i-ag-UDG"/>
+                    <constraint firstAttribute="trailing" secondItem="cg1-52-gIr" secondAttribute="trailing" id="qcx-B6-tHd"/>
+                    <constraint firstAttribute="bottom" secondItem="cg1-52-gIr" secondAttribute="bottom" id="xda-Hh-FzW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -11,6 +11,7 @@ import CoreData
 class EntryViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var field: UITextField!
+    var task: NSManagedObject?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,13 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
         
          field.delegate = self
+        
+        guard let text = task?.value(forKeyPath: ToDoModel.text) as? String,let isChecked = task?.value(forKeyPath: ToDoModel.isMarkedCompleted) as? Bool else {
+            return
+        }
+        
+        field.text = text
+        print(isChecked)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -35,8 +43,16 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
         }
         
         var info = [String:Any]()
-        info[ToDoModel.text] = text
-        info[ToDoModel.isMarkedCompleted] = false
+        
+        if(task != nil){
+            info["isNew"] = false
+            task!.setValue(text, forKeyPath: ToDoModel.text)
+        }
+        else{
+            info["isNew"] = true
+            info[ToDoModel.text] = text
+            info[ToDoModel.isMarkedCompleted] = false
+        }
         
         NotificationCenter.default.post(name: Notification.Name(rawValue: Constants.toDoNotificationKey), object: nil,userInfo: info)
         

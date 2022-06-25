@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ToDoIncompleteCell: UITableViewCell {
     
@@ -15,10 +16,8 @@ class ToDoIncompleteCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        checkbox.isChecked = false
     }
     
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
