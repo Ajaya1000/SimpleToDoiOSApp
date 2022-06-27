@@ -28,7 +28,7 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
         }
         
         field.text = text
-        print(isChecked)
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

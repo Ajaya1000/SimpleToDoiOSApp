@@ -71,7 +71,7 @@ extension ViewController: UITableViewDelegate{
         
         tasks.removeToDo(currentTask){
             tasks.loadToDo {
-                print("ToDo reload complete")
+                
             }
         }
         
@@ -126,8 +126,20 @@ extension ViewController: UITableViewDataSource{
         ToDoModel.sections.count
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        ToDoModel.sections[section]
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//
+//    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = Bundle.main.loadNibNamed("TableHeaderView", owner: self.tableView, options: nil)?.first as! TableHeaderView
+            
+        header.label.text = ToDoModel.sections[section]
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

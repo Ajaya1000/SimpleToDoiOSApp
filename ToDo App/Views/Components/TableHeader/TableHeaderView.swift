@@ -9,6 +9,8 @@ import UIKit
 
 class TableHeaderView: UIView {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

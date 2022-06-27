@@ -25,7 +25,7 @@
 		A52BC1AC286583AB00B2C22C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1AB286583AB00B2C22C /* Constants.swift */; };
 		A52BC1AF2865975300B2C22C /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1AE2865975300B2C22C /* ToDoModel.swift */; };
 		A52BC1B22865B31100B2C22C /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1B12865B31100B2C22C /* TableHeaderView.swift */; };
-		A52BC1B42865B33D00B2C22C /* TableHeaderVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */; };
+		A52BC1B42865B33D00B2C22C /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1B32865B33D00B2C22C /* TableHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,7 @@
 		A52BC1AB286583AB00B2C22C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A52BC1AE2865975300B2C22C /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		A52BC1B12865B31100B2C22C /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
-		A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderVIew.xib; sourceTree = "<group>"; };
+		A52BC1B32865B33D00B2C22C /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A52BC1B12865B31100B2C22C /* TableHeaderView.swift */,
-				A52BC1B32865B33D00B2C22C /* TableHeaderVIew.xib */,
+				A52BC1B32865B33D00B2C22C /* TableHeaderView.xib */,
 			);
 			path = TableHeader;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52BC1B42865B33D00B2C22C /* TableHeaderVIew.xib in Resources */,
+				A52BC1B42865B33D00B2C22C /* TableHeaderView.xib in Resources */,
 				A52BC14D2862DFE800B2C22C /* LaunchScreen.storyboard in Resources */,
 				A52BC17328642C2200B2C22C /* ToDoIncompleteCell.xib in Resources */,
 				A52BC14A2862DFE800B2C22C /* Assets.xcassets in Resources */,

@@ -9,8 +9,6 @@ import UIKit
 
 class CheckBox: UIView {
     
-    @IBOutlet var contentView: UIView!
-    
     @IBOutlet weak var button: UIButton!
     
     let checkedImage  = UIImage(named: "CheckedCheckBox")! as UIImage
@@ -40,8 +38,10 @@ class CheckBox: UIView {
     
     private func commonInit(){
         Bundle.main.loadNibNamed("CheckBox", owner: self, options: nil)
-        addSubview(contentView)
-        contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        addSubview(button)
+        button.frame = self.bounds
+        button.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+//        contentView.frame = self.bounds
+//        contentView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
     }
 }
