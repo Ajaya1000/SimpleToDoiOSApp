@@ -9,15 +9,58 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="n5S-Oz-FY7">
+            <objects>
+                <viewController id="TCt-fu-iXX" customClass="ViewController" customModule="ToDo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RMu-ov-FBR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="08G-72-GW5">
+                                <rect key="frame" x="147.5" y="416" width="119" height="64.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lw-Xn-NQQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCQ-HB-6iQ">
+                                        <rect key="frame" x="0.0" y="27.5" width="119" height="37"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onLoginButtonTap:" destination="TCt-fu-iXX" eventType="touchUpInside" id="di2-Yx-6Ar"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gA5-Np-R61"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="08G-72-GW5" firstAttribute="centerY" secondItem="RMu-ov-FBR" secondAttribute="centerY" id="GuU-Re-RIl"/>
+                            <constraint firstItem="08G-72-GW5" firstAttribute="centerX" secondItem="RMu-ov-FBR" secondAttribute="centerX" id="zNB-7t-SPi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dxp-5A-y3K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpy-vo-M88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461" y="70"/>
+        </scene>
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDo_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" userLabel="HomeVC" customClass="HomeViewController" customModule="ToDo_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QET-Wc-szF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -43,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971.01449275362324" y="91.741071428571431"/>
+            <point key="canvasLocation" x="1455" y="70"/>
         </scene>
         <!--EntryVC-->
         <scene sceneID="CWV-ff-PEq">
@@ -73,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="71j-ez-oAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982" y="831"/>
+            <point key="canvasLocation" x="1500" y="820"/>
         </scene>
         <!--TaskViewVC-->
         <scene sceneID="v5X-6i-Rz5">
@@ -90,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdx-kg-99a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695.6521739130435" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2438" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ClR-bc-QlL">
@@ -103,12 +146,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Da-cl-iQW"/>
+                        <segue destination="TCt-fu-iXX" kind="relationship" relationship="rootViewController" id="kZf-QD-zvM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K0-lh-38J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-54" y="92"/>
+            <point key="canvasLocation" x="-645" y="70"/>
         </scene>
     </scenes>
     <resources>

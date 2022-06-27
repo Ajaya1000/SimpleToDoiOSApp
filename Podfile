@@ -7,5 +7,8 @@ target 'ToDo App' do
   
 
   # Pods for ToDo App
-
+  pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Email'
+  
 end

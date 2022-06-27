@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A52BC1412862DFE700B2C22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1402862DFE700B2C22C /* AppDelegate.swift */; };
 		A52BC1432862DFE700B2C22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1422862DFE700B2C22C /* SceneDelegate.swift */; };
-		A52BC1452862DFE700B2C22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1442862DFE700B2C22C /* ViewController.swift */; };
+		A52BC1452862DFE700B2C22C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1442862DFE700B2C22C /* HomeViewController.swift */; };
 		A52BC1482862DFE700B2C22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1462862DFE700B2C22C /* Main.storyboard */; };
 		A52BC14A2862DFE800B2C22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1492862DFE800B2C22C /* Assets.xcassets */; };
 		A52BC14D2862DFE800B2C22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BC14B2862DFE800B2C22C /* LaunchScreen.storyboard */; };
@@ -29,8 +29,7 @@
 		A553FD3728697DE700845BE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A553FD3628697DE700845BE1 /* GoogleService-Info.plist */; };
 		A553FD3928697FB000845BE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553FD3828697FB000845BE1 /* User.swift */; };
 		A553FD3B2869838A00845BE1 /* CommonHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553FD3A2869838A00845BE1 /* CommonHelpers.swift */; };
-		A5839AF8286979F2004FF037 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5839AF7286979F2004FF037 /* FirebaseAuth */; };
-		A5839AFA286979F2004FF037 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5839AF9286979F2004FF037 /* FirebaseFirestoreSwift */; };
+		A59A78E22869A7A200156471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A78E12869A7A200156471 /* ViewController.swift */; };
 		B4D5E8B80431716EDF140B4C /* Pods_ToDo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352310A29A47B5A50B3F144 /* Pods_ToDo_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,7 @@
 		A52BC13D2862DFE700B2C22C /* ToDo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52BC1402862DFE700B2C22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52BC1422862DFE700B2C22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A52BC1442862DFE700B2C22C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A52BC1442862DFE700B2C22C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A52BC1472862DFE700B2C22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A52BC1492862DFE800B2C22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52BC14C2862DFE800B2C22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		A553FD3628697DE700845BE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A553FD3828697FB000845BE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A553FD3A2869838A00845BE1 /* CommonHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelpers.swift; sourceTree = "<group>"; };
+		A59A78E12869A7A200156471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B352310A29A47B5A50B3F144 /* Pods_ToDo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE93EE5CA548DB404D4ED02 /* Pods-ToDo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo App.release.xcconfig"; path = "Target Support Files/Pods-ToDo App/Pods-ToDo App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5839AF8286979F2004FF037 /* FirebaseAuth in Frameworks */,
-				A5839AFA286979F2004FF037 /* FirebaseFirestoreSwift in Frameworks */,
 				B4D5E8B80431716EDF140B4C /* Pods_ToDo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +82,6 @@
 				77ED7D70C8788702FD11710A /* Pods-ToDo App.debug.xcconfig */,
 				CBE93EE5CA548DB404D4ED02 /* Pods-ToDo App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,7 +132,8 @@
 		A52BC1542862E69B00B2C22C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A52BC1442862DFE700B2C22C /* ViewController.swift */,
+				A59A78E12869A7A200156471 /* ViewController.swift */,
+				A52BC1442862DFE700B2C22C /* HomeViewController.swift */,
 				A52BC1552862E6CE00B2C22C /* EntryViewController.swift */,
 				A52BC1572862E6F600B2C22C /* TaskViewController.swift */,
 			);
@@ -219,6 +217,7 @@
 				A52BC1392862DFE700B2C22C /* Sources */,
 				A52BC13A2862DFE700B2C22C /* Frameworks */,
 				A52BC13B2862DFE700B2C22C /* Resources */,
+				29143899EE9DADECE6D6CCBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,8 +225,6 @@
 			);
 			name = "ToDo App";
 			packageProductDependencies = (
-				A5839AF7286979F2004FF037 /* FirebaseAuth */,
-				A5839AF9286979F2004FF037 /* FirebaseFirestoreSwift */,
 			);
 			productName = "ToDo App";
 			productReference = A52BC13D2862DFE700B2C22C /* ToDo App.app */;
@@ -258,7 +255,6 @@
 			);
 			mainGroup = A52BC1342862DFE700B2C22C;
 			packageReferences = (
-				A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
 			);
 			productRefGroup = A52BC13E2862DFE700B2C22C /* Products */;
 			projectDirPath = "";
@@ -288,6 +284,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29143899EE9DADECE6D6CCBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDo App/Pods-ToDo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDo App/Pods-ToDo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDo App/Pods-ToDo App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D03CE8C2BA4367010D4D733 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,10 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59A78E22869A7A200156471 /* ViewController.swift in Sources */,
 				A52BC1B22865B31100B2C22C /* TableHeaderView.swift in Sources */,
 				A52BC176286433C100B2C22C /* CheckBox.swift in Sources */,
 				A52BC17228642C2200B2C22C /* ToDoIncompleteCell.swift in Sources */,
-				A52BC1452862DFE700B2C22C /* ViewController.swift in Sources */,
+				A52BC1452862DFE700B2C22C /* HomeViewController.swift in Sources */,
 				A52BC1AF2865975300B2C22C /* ToDoModel.swift in Sources */,
 				A52BC1562862E6CE00B2C22C /* EntryViewController.swift in Sources */,
 				A553FD3B2869838A00845BE1 /* CommonHelpers.swift in Sources */,
@@ -490,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.ToDo-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -518,7 +532,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.ToDo-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -548,30 +562,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A5839AF7286979F2004FF037 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
-			productName = FirebaseAuth;
-		};
-		A5839AF9286979F2004FF037 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
-			productName = FirebaseFirestoreSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A52BC1A82864D7D600B2C22C /* ToDoModel.xcdatamodeld */ = {
