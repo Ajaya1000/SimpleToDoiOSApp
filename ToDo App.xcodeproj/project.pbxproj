@@ -26,11 +26,16 @@
 		A52BC1AF2865975300B2C22C /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1AE2865975300B2C22C /* ToDoModel.swift */; };
 		A52BC1B22865B31100B2C22C /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BC1B12865B31100B2C22C /* TableHeaderView.swift */; };
 		A52BC1B42865B33D00B2C22C /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52BC1B32865B33D00B2C22C /* TableHeaderView.xib */; };
+		A553FD3728697DE700845BE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A553FD3628697DE700845BE1 /* GoogleService-Info.plist */; };
+		A553FD3928697FB000845BE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553FD3828697FB000845BE1 /* User.swift */; };
+		A553FD3B2869838A00845BE1 /* CommonHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553FD3A2869838A00845BE1 /* CommonHelpers.swift */; };
 		A5839AF8286979F2004FF037 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5839AF7286979F2004FF037 /* FirebaseAuth */; };
 		A5839AFA286979F2004FF037 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5839AF9286979F2004FF037 /* FirebaseFirestoreSwift */; };
+		B4D5E8B80431716EDF140B4C /* Pods_ToDo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352310A29A47B5A50B3F144 /* Pods_ToDo_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77ED7D70C8788702FD11710A /* Pods-ToDo App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo App.debug.xcconfig"; path = "Target Support Files/Pods-ToDo App/Pods-ToDo App.debug.xcconfig"; sourceTree = "<group>"; };
 		A52BC13D2862DFE700B2C22C /* ToDo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52BC1402862DFE700B2C22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52BC1422862DFE700B2C22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +57,11 @@
 		A52BC1AE2865975300B2C22C /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		A52BC1B12865B31100B2C22C /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		A52BC1B32865B33D00B2C22C /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
+		A553FD3628697DE700845BE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A553FD3828697FB000845BE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A553FD3A2869838A00845BE1 /* CommonHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelpers.swift; sourceTree = "<group>"; };
+		B352310A29A47B5A50B3F144 /* Pods_ToDo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE93EE5CA548DB404D4ED02 /* Pods-ToDo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo App.release.xcconfig"; path = "Target Support Files/Pods-ToDo App/Pods-ToDo App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +71,38 @@
 			files = (
 				A5839AF8286979F2004FF037 /* FirebaseAuth in Frameworks */,
 				A5839AFA286979F2004FF037 /* FirebaseFirestoreSwift in Frameworks */,
+				B4D5E8B80431716EDF140B4C /* Pods_ToDo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C90E8F50D380281BF1D4E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77ED7D70C8788702FD11710A /* Pods-ToDo App.debug.xcconfig */,
+				CBE93EE5CA548DB404D4ED02 /* Pods-ToDo App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75FBC4F217F2858E8068CD66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B352310A29A47B5A50B3F144 /* Pods_ToDo_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A52BC1342862DFE700B2C22C = {
 			isa = PBXGroup;
 			children = (
 				A52BC13F2862DFE700B2C22C /* ToDo App */,
 				A52BC13E2862DFE700B2C22C /* Products */,
+				3C90E8F50D380281BF1D4E33 /* Pods */,
+				75FBC4F217F2858E8068CD66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +125,7 @@
 				A52BC1462862DFE700B2C22C /* Main.storyboard */,
 				A52BC1492862DFE800B2C22C /* Assets.xcassets */,
 				A52BC14B2862DFE800B2C22C /* LaunchScreen.storyboard */,
+				A553FD3628697DE700845BE1 /* GoogleService-Info.plist */,
 				A52BC14E2862DFE800B2C22C /* Info.plist */,
 				A52BC1A82864D7D600B2C22C /* ToDoModel.xcdatamodeld */,
 			);
@@ -161,6 +193,8 @@
 			children = (
 				A52BC1AB286583AB00B2C22C /* Constants.swift */,
 				A52BC1AE2865975300B2C22C /* ToDoModel.swift */,
+				A553FD3828697FB000845BE1 /* User.swift */,
+				A553FD3A2869838A00845BE1 /* CommonHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -181,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A52BC1512862DFE800B2C22C /* Build configuration list for PBXNativeTarget "ToDo App" */;
 			buildPhases = (
+				7D03CE8C2BA4367010D4D733 /* [CP] Check Pods Manifest.lock */,
 				A52BC1392862DFE700B2C22C /* Sources */,
 				A52BC13A2862DFE700B2C22C /* Frameworks */,
 				A52BC13B2862DFE700B2C22C /* Resources */,
@@ -223,7 +258,7 @@
 			);
 			mainGroup = A52BC1342862DFE700B2C22C;
 			packageReferences = (
-				A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
 			);
 			productRefGroup = A52BC13E2862DFE700B2C22C /* Products */;
 			projectDirPath = "";
@@ -240,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52BC1B42865B33D00B2C22C /* TableHeaderView.xib in Resources */,
+				A553FD3728697DE700845BE1 /* GoogleService-Info.plist in Resources */,
 				A52BC14D2862DFE800B2C22C /* LaunchScreen.storyboard in Resources */,
 				A52BC17328642C2200B2C22C /* ToDoIncompleteCell.xib in Resources */,
 				A52BC14A2862DFE800B2C22C /* Assets.xcassets in Resources */,
@@ -250,6 +286,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D03CE8C2BA4367010D4D733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDo App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A52BC1392862DFE700B2C22C /* Sources */ = {
@@ -262,9 +323,11 @@
 				A52BC1452862DFE700B2C22C /* ViewController.swift in Sources */,
 				A52BC1AF2865975300B2C22C /* ToDoModel.swift in Sources */,
 				A52BC1562862E6CE00B2C22C /* EntryViewController.swift in Sources */,
+				A553FD3B2869838A00845BE1 /* CommonHelpers.swift in Sources */,
 				A52BC1582862E6F600B2C22C /* TaskViewController.swift in Sources */,
 				A52BC1AC286583AB00B2C22C /* Constants.swift in Sources */,
 				A52BC1412862DFE700B2C22C /* AppDelegate.swift in Sources */,
+				A553FD3928697FB000845BE1 /* User.swift in Sources */,
 				A52BC16E28642C0600B2C22C /* ToDoCompleteCell.swift in Sources */,
 				A52BC1432862DFE700B2C22C /* SceneDelegate.swift in Sources */,
 				A52BC1AA2864D7D600B2C22C /* ToDoModel.xcdatamodeld in Sources */,
@@ -409,6 +472,7 @@
 		};
 		A52BC1522862DFE800B2C22C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77ED7D70C8788702FD11710A /* Pods-ToDo App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +500,7 @@
 		};
 		A52BC1532862DFE800B2C22C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE93EE5CA548DB404D4ED02 /* Pods-ToDo App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,7 +550,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -498,12 +563,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A5839AF7286979F2004FF037 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		A5839AF9286979F2004FF037 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = A5839AF6286979F2004FF037 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -12,17 +12,16 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var field: UITextField!
     var task: NSManagedObject?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         // Save button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
         
-         field.delegate = self
-        
+        field.delegate = self
         guard let text = task?.value(forKeyPath: ToDoModel.text) as? String,let isChecked = task?.value(forKeyPath: ToDoModel.isMarkedCompleted) as? Bool else {
             return
         }
@@ -37,7 +36,7 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
     }
     
     @objc func saveTask(){
-
+        
         guard let text = field.text,!text.isEmpty else{
             return
         }
@@ -58,5 +57,5 @@ class EntryViewController: UIViewController,UITextFieldDelegate {
         
         navigationController?.popViewController(animated: true)
     }
-
+    
 }
